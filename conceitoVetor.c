@@ -11,11 +11,6 @@ int main(){
     printf("v1[%d] = %.1f\n",i, v1[i]);
 
     }
-//    abaixo escrevendo em varios prints mas nao se usa assim
-    // printf("v1[1] = %.1f\n", v1[1]);
-    // printf("v1[2] = %.1f\n", v1[2]);
-    // printf("v1[3] = %.1f\n", v1[3]);
-
 
     return 0;
 }
