@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-    //switch nao faz condicional é mais usado para se usar em um menu simples
-
 int main (){
 
     int valor;
