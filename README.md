@@ -1,2 +1,2 @@
 # exercicios_exemplos_C
-Alguns exercícios e exemplos em linguagem C 
+Exercícios e exemplos em linguagem C para a faculdade
