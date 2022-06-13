@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px">
 int main(){
     int v[6] = {0,1,2,3,4,5};
     int i = 0, j = 5, elemento = 4;
