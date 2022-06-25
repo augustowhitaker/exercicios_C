@@ -14,7 +14,7 @@ int main(){
 
         vetC[i] = vetA[i] + vetB[i];
     }
-    // Mostrando o valores de vetA e vetB na tela
+    // Mostrando a soma de vetA e vetB  guardado em vetC na tela
     for(int i = 0; i < 5; i++){
         printf("%d + %d = %d \n",vetA[i],vetB[i],vetC[i]);
 
