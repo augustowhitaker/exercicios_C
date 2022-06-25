@@ -1,5 +1,5 @@
 #include <stdio.h>
-// escreva um programa que leia dois vetores A e B com 20 elementos numericos
+// escreva um programa que leia dois vetores A e B com 5 elementos numericos
 // contruir um vetor C onde cada elemento de C é a soma de A com B, apresentar os vetores no final
 
 int main(){
