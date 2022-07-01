@@ -5,7 +5,7 @@
 #define TAM_MAX_LIN 5 //cinco alunos
 #define TAM_MAX_COL 5 //cinco notas
 
-int main() {
+ main() {
 
 
 	int lin, col;
