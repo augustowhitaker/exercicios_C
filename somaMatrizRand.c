@@ -2,7 +2,8 @@
 #include <time.h>
 
 
-// Exercicio calculcar duas matrizes e se salvar a soma dessas duas em outra matriz, no exercicio nao foi mencionado para o usuario preencher essas matrizes portando usarei a funcao rand para ele preencher com numeros aleatorios
+// Exercicio calculcar duas matrizes e salvar a soma dessas duas em outra matriz, no exercicio nao foi mencionado para o usuario 
+//preencher essas matrizes portando usarei a funcao rand para ele preencher com numeros aleatorios
 
 int main()
 {
