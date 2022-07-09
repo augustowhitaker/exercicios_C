@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+//variaveis globais são declaradas antes das funções main e funções que criarmos, pode ser usado no programa todo sem necessidade de declarar o
+// tipo dela novamente
+
 void teste(void){
     //variavel automatica é apenas armazenadas dentro do escopo da função, ou seja toda vez que é invocada ela retorna o mesmo resultado pois ela
     //"destruida" toda vez que roda, sendo assim usada para manter o mesmo retorno
