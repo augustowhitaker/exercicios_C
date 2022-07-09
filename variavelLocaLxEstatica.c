@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 //variaveis globais são declaradas antes das funções main e funções que criarmos, pode ser usado no programa todo ou seja na funcao main e nas funcoes
-//criadas sem necessidade de declarar o  tipo dela novamente
+//criadas sem necessidade de declarar o  tipo dela novamente, e ela funciona como a estatica, que é acumulando valores se chamada variaves vezes, quando
+//colocada em uma funcao por exemplo
 
 void teste(void){
     //variavel automatica é apenas armazenadas dentro do escopo da função, ou seja toda vez que é invocada ela retorna o mesmo resultado pois ela
@@ -15,6 +16,9 @@ void teste(void){
     static int variavelLocalEstatica = 2;
     variavelLocalEstatica *= 2;
     printf("Local Estatica = %d \n" , variavelLocalEstatica);
+    
+    global *= 2;
+    printf("Global = %d \n",global);//resutaldo igual com o static
 }
 
 int main(){
