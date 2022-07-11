@@ -13,6 +13,20 @@ int main(){
 
     return 0;
 }
+//inicio funcao
+int fatorial(int x){
+    int resultado;
+
+    if(x == 0){
+        resultado = 1;
+    }else{
+        resultado = x * fatorial (x-1);//a funcao chama a si mesma,ela abre outra instancia da funcao fatorial e assim sucessivamente vai abrindo 
+        //outras instancias até obter o resultado e retornar o valor obtido, ou seja é rodada uma funcao nova em um outro espaço da memoria e as 
+        //outras funcoes abertas ficam em standby até que a ultima funcao retorne o 0 e quando elas voltam ela ja vai calculando pois o resultado fica 
+        //guardado na ultima função .
+    }
+    return resultado;
+}
 
 //  explicando usando a funcao acima:
 
@@ -107,14 +121,3 @@ int main(){
 
 //  return resultado (6);
 // }
-
-int fatorial(int x){
-    int resultado;
-
-    if(x == 0){
-        resultado = 1;
-    }else{
-        resultado = x * fatorial (x-1);//a funcao chama a si mesma,ela abre outra instancia da funcao fatorial e assim sucessivamente vai abrindo outras instancias até obter o resultado e retornar o valor obtido, ou seja é rodada uma funcao nova em um outro espaço da memoria e as outras funcoes abertas ficam em standby até que a ultima funcao retorne o 0 e quando elas voltam ela ja vai calculando pois o resultado fica guardado na ultima função .
-    }
-    return resultado;
-}
