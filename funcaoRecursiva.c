@@ -6,7 +6,10 @@ int fatorial(int x){
     if(x == 0){
         resultado = 1;
     }else{
-        resultado = x * fatorial (x-1);//a funcao chama a si mesma,ela abre outra instancia da funcao fatorial e assim sucessivamente vai abrindo outras instancias até obter o resultado e retornar o valor obtido, ou seja é rodada uma funcao nova em um outro espaço da memoria e as outras funcoes abertas ficam em standby até que a ultima funcao retorne o 0 e quando elas voltam ela ja vai calculando pois o resultado fica guardado na ultima função .
+        resultado = x * fatorial (x-1);//a funcao chama a si mesma,ela abre outra instancia da funcao fatorial e assim sucessivamente vai abrindo 
+        //outras instancias até obter o resultado e retornar o valor obtido, ou seja é rodada uma funcao nova em um outro espaço da memoria e as 
+        //outras funcoes abertas ficam em standby até que a ultima funcao retorne o 0 e quando elas voltam ela ja vai calculando pois o resultado fica 
+        //guardado na ultima função .
     }
     return resultado;
 }
@@ -100,12 +103,12 @@ int main(){
              //  ela faz o CURSO CONTRÁRIO quando resolve um problema deste tipo):
 
 
-             // Se ligou nos números entre parênteses nas variáveis "resultado" acima?
-             // agora siga elas para você entender o que está sendo feito logo abaixo:
+             // Reparar nos números entre parênteses nas variáveis "resultado" acima
+             // agora siga elas para  entender o que está sendo feito logo abaixo:
 
 
             //   (1) resultado = 1;                     // voltando com o valor 1
-    //           (2) resultado = 1 * (1) = 1;     // voltando com o valor 1
+    //           (2) resultado = 1 * (1) = 1;         // voltando com o valor 1
     //          (3) resultado =  2 * (1) = 2;        // voltando com o valor 2
     //          (4) resultado = 3 * (2) = 6;        // finalmente resolvido
     //         }
