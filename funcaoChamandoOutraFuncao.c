@@ -4,7 +4,7 @@ float valorAbsoluto (float x){//funcao para deixar positivo os numeros
    
         return x * -1;//retorno contendo o calculo negativo para positivo
 }
-float somaDeDigitos(float num1, float num2){//fazendo a soma e invocando a outra funcao "valorabsoluto" quando necessario
+float somaDeDigitos(float num1, float num2){//fazendo a soma e invocando a outra funcao "valorAbsoluto" quando necessario
 
     if(num1 < 0){//testando se o valor é negativo
         num1 = valorAbsoluto(num1);//convertando o numero para positivo se necessario
