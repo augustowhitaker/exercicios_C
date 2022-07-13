@@ -1,5 +1,17 @@
 #include <stdio.h>
 
+int main(){
+
+    float a, b, soma;
+    printf("Digite 2 numeros: ");
+    scanf("%f", &a);
+    scanf("%f", &b);
+
+    soma = somaDeDigitos(a, b);
+    printf("A soma eh %f\n" ,soma);
+    
+    return 0;
+}
 float valorAbsoluto (float x){//funcao para deixar positivo os numeros
    
         return x * -1;//retorno contendo o calculo negativo para positivo
@@ -15,16 +27,4 @@ float somaDeDigitos(float num1, float num2){//Função de soma
                                    
     }
     return num1 + num2;//retornando a soma
-}
-int main(){
-
-    float a, b, soma;
-    printf("Digite 2 numeros: ");
-    scanf("%f", &a);
-    scanf("%f", &b);
-
-    soma = somaDeDigitos(a, b);
-    printf("A soma eh %f\n" ,soma);
-    
-    return 0;
 }
