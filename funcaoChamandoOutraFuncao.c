@@ -23,7 +23,7 @@ float somaDeDigitos(float num1, float num2){//Função de soma
     }
     if(num2 < 0){//testando se o valor é negativo
         num2 = valorAbsoluto(num2);//invocando a outra funcao "valorAbsoluto" quando necessario perceba que é colocado dentro do parametro da funcao do 
-                                   //valorAbsoluto o proprio num2/num1, pois agora os nums passarão a valer o num de dentro do parametro
+                                   //valorAbsoluto o proprio num2/num1, pois agora os nums passarão a valer o num de dentro da funcao valorAbsoluto(num)
                                    
     }
     return num1 + num2;//retornando a soma
