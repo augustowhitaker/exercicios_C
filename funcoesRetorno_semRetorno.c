@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-    float fmedia(float n1, float n2){//função recebe n1,n2 e retorna float
-    float resultado;
-    resultado = (n1 + n2)/2;
-    return(resultado);//retornando o valor para main
-    }
 int main(void){
     float v1, v2, media;
     printf("Digite o primeiro valor: ");
@@ -17,8 +12,11 @@ int main(void){
 
     printf("Media = %5.2f\n", media);
 
-
-
-
     return 0;
 }
+
+   float fmedia(float n1, float n2){//função recebe n1,n2 e retorna float
+    float resultado;
+    resultado = (n1 + n2)/2;
+    return(resultado);//retornando o valor para main
+    }
