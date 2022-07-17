@@ -2,10 +2,12 @@
 #include <math.h>
 #include <stdlib.h>
 
-// todos os comentarios dentros dos parametros() é pelo fato de ter colocado a matriz em variavel global a forma comentada é como funcionaria se estivesse em variavel local,ou seja a variavel que é lida somente dentro do escopo em uso
+// todos os comentarios dentros dos parametros() é pelo fato de ter colocado a matriz em variavel global a forma comentada é como funcionaria
+//se estivesse em variavel local,ou seja a variavel que é lida somente dentro do escopo em uso
 
 int  tam = 5;
-int mat[5][5];//colocando a matriz em variavel global, assim nao sera necessario passar ela como parametro sendo assim todas as funcoes e procedimentos tem acesso a ela
+int mat[5][5];//colocando a matriz em variavel global, assim nao sera necessario passar ela como parametro sendo assim todas as funcoes e
+//procedimentos tem acesso a ela
 
 int main(){
        int i ,j;
@@ -34,7 +36,8 @@ int main(){
     return 0;
 }
 // Funcao criada para ler a matriz
-void imprimir(/*int m[][5] devido a matriz global nao é mais necessaria passar esse parametro*/){//sempre é necessario colocar a qtd de colunas de linhas não é necessaria
+void imprimir(/*int m[][5] devido a matriz global nao é mais necessaria passar esse parametro*/){//sempre é necessario colocar a qtd de colunas 
+  //linhas não é necessaria
     int i,j;
      for(i = 0; i < tam; i++){
         for(j = 0; j < tam; j++){
