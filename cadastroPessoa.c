@@ -4,11 +4,14 @@
 #define SIZE 200
 char nome[SIZE][50];
 char email[SIZE][50];
-int cpf[SIZE][SIZE];
+int cpf[SIZE];
 int op;
+void cadastro();
+void pesquisa();
+    
 
 int main(){
-    // system("color F4");
+   system("color b0");
     cadastro();
     pesquisa();
 
@@ -16,53 +19,53 @@ int main(){
 }
 
 void cadastro(void){
+   system("color b0");
     static int linha;
 
     do{
-        system ("color F4");
         printf("\nDigite o nome: ");
-        scanf("%c",&nome[linha]);
+        scanf("%s",&nome[linha]);
         printf("\nDigite o email: ");
-        scanf("%c",&email[linha]);
+        scanf("%s",&email[linha]);
         printf("\nDigite CPF: ");
         scanf("%d",&cpf[linha]);
         printf("\nDigite 1 para continuar ou outro valor para sair\n");
         scanf("%d",&op);
         linha++;
     }while(op == 1);
+    // fim funcao cadastro
 }
 void pesquisa(){
     int cpfPesquisa;
-    int i;
     char emailPesquisa[50];
+    int i;
     do{
         printf("\nDigite 1 para pesquisar CPF ou 2 para pesquisar E-mail\n");
         scanf("%d",&op);
         switch(op){
             case 1:
-                printf("\nDigite o CPF");
+                printf("\nDigite o CPF: ");
                 scanf("%d",&cpfPesquisa);
                 for(i = 0; i < SIZE; i++){
                     if(cpf[i] == cpfPesquisa){
-                        printf("\nNome: %s\nEmail: %s \nCPF: %d",nome,[i],email[i],cpf[i]);
+                        printf("\nNome: %s\nEmail: %s \nCPF: %d",nome[i],email[i],cpf[i]);
                     }
                 }
                 break;
             case 2:
-                printf("\nDigite o Email");
-                scanf("%c",&emailPesquisa);
+                printf("\nDigite o Email: ");
+                scanf("%s",&emailPesquisa);
                   for(i = 0; i < SIZE; i++){
-                    if(strcmp(email[i], emailPesquisa)){
-                        printf("\nNome: %s\nEmail: %s \nCPF: %d",nome,[i],email[i],cpf[i]);
+                    if(strcmp(email[i], emailPesquisa) == 0){
+                        printf("\nNome: %s\nEmail: %s \nCPF: %d",nome[i],email[i],cpf[i]);
                     }
                 }
-
                 break;
             default:
                     printf("\nOpcao Invalida");
                 break;
         }
-        printf("\nDigite 1 para continuar a pesquisando \n");
+        printf("\nDigite 1 para continuar  pesquisando ou 0 para sair\n");
         scanf("%d",&op);
     }while(op == 1);
 }
