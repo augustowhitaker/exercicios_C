@@ -6,14 +6,31 @@ char nome[SIZE][50];
 char email[SIZE][50];
 int cpf[SIZE];
 int op;
-void cadastro();
-void pesquisa();
-    
 
 int main(){
    system("color b0");
-    cadastro();
-    pesquisa();
+    do{
+        system("clear"); //no windows se usa cls
+        printf("\n**** Menu ****\n1 - Cadastrar\n2 - Listar todos\n3 - Pesquisar\n4 - Sair");
+        scanf("%d",&op);
+        switch(op){
+            case 1:
+                cadastro();
+                break;
+            case 2:
+                lista();
+                break;
+            case 3:
+                pesquisa();
+                break;
+            case 4:
+                system("exit");
+                break;
+            default:
+                printf("Digite uma opcao valida");
+                break;
+        }
+    }while(op != 4);
 
     return 0;
 }
@@ -68,4 +85,17 @@ void pesquisa(){
         printf("\nDigite 1 para continuar  pesquisando ou 0 para sair\n");
         scanf("%d",&op);
     }while(op == 1);
+}
+
+void lista(){
+    int i;
+    for(i = 0; i < SIZE; i++){
+        if(cpf[i] > 0){
+            printf("\nNome: %s\nEmail: %s \nCPF: %d",nome[i],email[i],cpf[i]);
+        }else{
+            break;
+        }
+    }
+    getchar();
+    getchar();
 }
