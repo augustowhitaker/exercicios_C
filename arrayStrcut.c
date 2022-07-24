@@ -11,7 +11,8 @@ CAD_INFO;
 int main(){
     FILE *ptrArq;//ponteiro para arquiv
 
-    //declarando um vetor de struct CAD_INFO denominado vetDados com 3 posições porque QTD foi definido com 3 posições. Em seguida é atribuido o conjunto de valores de cada elemento do vetor
+    //declarando um vetor de struct CAD_INFO denominado vetDados com 3 posições porque QTD foi definido com 3 posições. Em seguida é atribuido o 
+    //conjunto de valores de cada elemento do vetor
     CAD_INFO vetDados[QTD] = {
         {10, "Augusto", 9.67},
         {20, "Eduardo", 8.34},
